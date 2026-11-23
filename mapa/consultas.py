@@ -2,9 +2,29 @@
 
 FietsRoute: Ana Alice, Caio Vasconcelos e Yasmin Barata.
 """
+import json
 import math
 
 RAIO_TERRA_M = 6371008.8
+
+
+def carregar_pontos(caminho):
+    with open(caminho, encoding="utf-8") as arquivo:
+        return {ponto["id"]: ponto for ponto in json.load(arquivo)}
+
+
+def geometria_trecho(grafo, a, b):
+    return grafo.trecho(a, b)["geometria"] or [grafo.coordenadas(a), grafo.coordenadas(b)]
+
+
+def linha_da_rota(grafo, rota):
+    if len(rota) == 1:
+        return [grafo.coordenadas(rota[0])]
+    linha = []
+    for a, b in zip(rota, rota[1:]):
+        pontos = geometria_trecho(grafo, a, b)
+        linha += pontos[1:] if linha else pontos  # o início repete o fim do trecho anterior
+    return linha
 
 
 def haversine(lat1, lon1, lat2, lon2):
