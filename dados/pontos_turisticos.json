@@ -1,0 +1,12 @@
+[
+  {"id": "estacao_central", "nome": "Estação Central", "lat": 52.3784, "lon": 4.8997},
+  {"id": "museu_van_gogh", "nome": "Museu Van Gogh", "lat": 52.3584, "lon": 4.8811},
+  {"id": "museu_nacional", "nome": "Museu Nacional", "lat": 52.3600, "lon": 4.8852},
+  {"id": "praca_dam", "nome": "Praça Dam", "lat": 52.3731, "lon": 4.8926},
+  {"id": "magere_brug", "nome": "Magere Brug", "lat": 52.3636, "lon": 4.9025},
+  {"id": "jordaan", "nome": "Jordaan", "lat": 52.3747, "lon": 4.8840},
+  {"id": "praca_rembrandt", "nome": "Praça Rembrandt", "lat": 52.3663, "lon": 4.8964},
+  {"id": "praca_leidse", "nome": "Praça Leidse", "lat": 52.3641, "lon": 4.8828},
+  {"id": "de_pijp", "nome": "De Pijp", "lat": 52.3557, "lon": 4.8945},
+  {"id": "parque_vondel", "nome": "Parque Vondel", "lat": 52.3580, "lon": 4.8686}
+]
