@@ -1,5 +1,6 @@
 folium==1.0.0
 matplotlib==3.11.2
+networkx==3.7
 notebook==7.6.5
 osmnx==2.2.0
 pillow==13.0.0
