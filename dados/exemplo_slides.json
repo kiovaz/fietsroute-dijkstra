@@ -1,0 +1,19 @@
+{
+  "unidade": "m",
+  "pontos": ["Estação Central", "Praça Dam", "Jordaan", "Praça Rembrandt", "Praça Leidse", "Museu Nacional", "De Pijp", "Parque Vondel"],
+  "trechos": [
+    {"de": "Estação Central", "para": "Praça Dam", "comprimento": 1000},
+    {"de": "Estação Central", "para": "Jordaan", "comprimento": 1750},
+    {"de": "Praça Dam", "para": "Jordaan", "comprimento": 1000},
+    {"de": "Praça Dam", "para": "Praça Rembrandt", "comprimento": 1500},
+    {"de": "Praça Dam", "para": "Praça Leidse", "comprimento": 2250},
+    {"de": "Jordaan", "para": "Praça Leidse", "comprimento": 2000},
+    {"de": "Jordaan", "para": "Parque Vondel", "comprimento": 3000},
+    {"de": "Praça Rembrandt", "para": "Museu Nacional", "comprimento": 2000},
+    {"de": "Praça Rembrandt", "para": "De Pijp", "comprimento": 1250},
+    {"de": "Praça Leidse", "para": "Parque Vondel", "comprimento": 750},
+    {"de": "Praça Leidse", "para": "Museu Nacional", "comprimento": 1000},
+    {"de": "Museu Nacional", "para": "De Pijp", "comprimento": 1250},
+    {"de": "Museu Nacional", "para": "Parque Vondel", "comprimento": 1000}
+  ]
+}
