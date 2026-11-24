@@ -89,7 +89,7 @@ Rota de Estação Central até Museu Van Gogh, em um mapa com 4.932 cruzamentos 
 
 ## Referências
 
-ACM. **Edsger W. Dijkstra**: A.M. Turing Award Laureate. Disponível em: https://amturing.acm.org/award_winners/dijkstra_1053701.
+ACM. **Edsger W. Dijkstra**: A.M. Turing Award Laureate. Disponível em: https://amturing.acm.org/award_winners/dijkstra_1053701. Acesso em: 23 nov. 2026.
 
 BOEING, G. OSMnx: new methods for acquiring, constructing, analyzing, and visualizing complex street networks. **Computers, Environment and Urban Systems**, v. 65, p. 126-139, 2017. DOI: https://doi.org/10.1016/j.compenvurbsys.2017.05.004.
 
