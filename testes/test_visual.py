@@ -11,7 +11,7 @@ from PIL import Image
 
 from mapa.animar import QUADROS_FIM, QUADROS_ONDA, QUADROS_ROTA, QUADROS_ZOOM, _limites_do_desvio, criar_animacao
 from mapa.consultas import linha_da_rota
-from mapa.desenhar import desenhar_rota
+from mapa.desenhar import desenhar_pontos, desenhar_rota
 from mapa.gerar_gifs import aplicar_lotacao
 from nucleo.dijkstra import caminho, dijkstra
 from nucleo.grafo import Grafo
@@ -55,6 +55,12 @@ class TestDesenho(unittest.TestCase):
     def test_rota_vazia(self):
         with self.assertRaises(ValueError):
             desenhar_rota(grafo(), [])
+
+    def test_pontos_com_origem_e_destino(self):
+        a, b = {"nome": "Ponto A", "lat": 52.0, "lon": 4.0}, {"nome": "Ponto B", "lat": 52.1, "lon": 4.1}
+        html = desenhar_pontos({"a": a, "b": b}.values(), a, b).get_root().render()
+        self.assertIn("Origem: Ponto A", html)
+        self.assertIn("Destino: Ponto B", html)
 
 
 class TestAnimacao(unittest.TestCase):
